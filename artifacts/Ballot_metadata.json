@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.5.9+commit.e560f70d"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toVoter",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"name": "_winningProposal",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toProposal",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_numProposals",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"constructor": "Create a new ballot with $(_numProposals) different proposals.",
+				"register(address)": {
+					"notice": "May only be called by $(chairperson)."
+				},
+				"vote(uint8)": {
+					"notice": "Give a single vote to proposal $(toProposal)."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BallotBasic-J.sol": "Ballot"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BallotBasic-J.sol": {
+			"keccak256": "0x22bfb641b4ed962f6c2573d7d8114a24efdb7e9f195450948d63319c770082d7",
+			"urls": [
+				"bzzr://d1c98f9a29b42554dc55757cf66ab3f6f59a10a3f59da022cd50b8bad653071b",
+				"dweb:/ipfs/QmfQXJg94VBW7o2DH2BZeAhtSogDrC28viyR3uMVTqvXsX"
+			]
+		}
+	},
+	"version": 1
+}
