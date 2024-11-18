@@ -48,6 +48,20 @@
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "stage",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"name": "_numProposals",
@@ -76,7 +90,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BallotBasic-J.sol": "Ballot"
+			"BallotV2-J.sol": "Ballot"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -87,11 +101,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"BallotBasic-J.sol": {
-			"keccak256": "0x22bfb641b4ed962f6c2573d7d8114a24efdb7e9f195450948d63319c770082d7",
+		"BallotV2-J.sol": {
+			"keccak256": "0x01229d1d2a50f58202ba8eb6b11f446da41e6aecb637717c5a0ab0bf5040df7f",
 			"urls": [
-				"bzzr://d1c98f9a29b42554dc55757cf66ab3f6f59a10a3f59da022cd50b8bad653071b",
-				"dweb:/ipfs/QmfQXJg94VBW7o2DH2BZeAhtSogDrC28viyR3uMVTqvXsX"
+				"bzzr://e9f917744cf94374f8302707f80c9f571a47fbac89091c13e28c2b374f28b8a3",
+				"dweb:/ipfs/QmR1QsqG3G9gHQAHdfFSBjzLuvY9K2xxbiNtn18PoGnnji"
 			]
 		}
 	},
