@@ -71,6 +71,12 @@
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "votingCompleted",
+				"type": "event"
 			}
 		],
 		"devdoc": {
@@ -90,7 +96,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BallotV2-J.sol": "Ballot"
+			"BallotV3-J.sol": "Ballot"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -101,11 +107,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"BallotV2-J.sol": {
-			"keccak256": "0x01229d1d2a50f58202ba8eb6b11f446da41e6aecb637717c5a0ab0bf5040df7f",
+		"BallotV3-J.sol": {
+			"keccak256": "0x49b04b8764ef1651c544baf4dfbced51aa5c71e89f64286ebd09bd3c42b0a683",
 			"urls": [
-				"bzzr://e9f917744cf94374f8302707f80c9f571a47fbac89091c13e28c2b374f28b8a3",
-				"dweb:/ipfs/QmR1QsqG3G9gHQAHdfFSBjzLuvY9K2xxbiNtn18PoGnnji"
+				"bzzr://181c8fdcb90def515a6c6f11c711a1e701ea577c2d8b53a11c9ca9fe51960602",
+				"dweb:/ipfs/QmQxtLzY4Hq27BwxwcQyjzmDoYnYfhbz8FqLv9BaoPEfRD"
 			]
 		}
 	},
