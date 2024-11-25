@@ -1,18 +1,15 @@
 {
 	"compiler": {
-		"version": "0.5.9+commit.e560f70d"
+		"version": "0.5.17+commit.d19bba13"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": false,
 				"inputs": [],
-				"name": "register",
-				"outputs": [],
 				"payable": true,
 				"stateMutability": "payable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"constant": true,
@@ -20,6 +17,7 @@
 				"name": "beneficiary",
 				"outputs": [
 					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -32,10 +30,12 @@
 				"constant": false,
 				"inputs": [
 					{
+						"internalType": "uint256",
 						"name": "_itemId",
 						"type": "uint256"
 					},
 					{
+						"internalType": "uint256",
 						"name": "_count",
 						"type": "uint256"
 					}
@@ -50,6 +50,7 @@
 				"constant": true,
 				"inputs": [
 					{
+						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
 					}
@@ -57,20 +58,53 @@
 				"name": "getPersonDetails",
 				"outputs": [
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					},
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					},
 					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "items",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "itemId",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "register",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -86,6 +120,7 @@
 				"constant": true,
 				"inputs": [
 					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -93,6 +128,7 @@
 				"name": "winners",
 				"outputs": [
 					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -100,31 +136,6 @@
 				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "items",
-				"outputs": [
-					{
-						"name": "itemId",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"payable": true,
-				"stateMutability": "payable",
-				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -136,9 +147,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"AuctionAnyoneCheck.sol": "Auction"
+			"AuctionAnswers.sol": "Auction"
 		},
-		"evmVersion": "petersburg",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -147,11 +158,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"AuctionAnyoneCheck.sol": {
-			"keccak256": "0x78de441e1c1c1679cf58030adc727749b126956699e1d4c71e23cb6c0b819c57",
+		"AuctionAnswers.sol": {
+			"keccak256": "0x4b3aa3580f8ee1ee353d3da21a947d7c583bbc97b3f762d9d6bb6d90ee25a33b",
 			"urls": [
-				"bzzr://f867852427ba92bb9006c8c92427421389323f88964d20d7999928b04676edb0",
-				"dweb:/ipfs/QmZuV2MXF2YSAbvpZZy2shSqqAnoCVmJUYqw9CE7wd1vEm"
+				"bzz-raw://466695e58af528d12c491b72ff9f16475e467aa41efe39f38d6736c7a92163c8",
+				"dweb:/ipfs/Qmf1hwQPPQXEQk94QMB8cgQLSsxNDWsXwTCJQaFE3PTGu7"
 			]
 		}
 	},
